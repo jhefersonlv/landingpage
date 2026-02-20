@@ -1,0 +1,54 @@
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-gray {
+  color: var(--color-gray);
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+.text-accent-1 {
+  color: var(--color-accent);
+}
+
+.text-accent-2 {
+  color: var(--color-secondary);
+}
+
+.gradient-text {
+  background: var(--gradient-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+
+
+
+
+

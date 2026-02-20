@@ -1,0 +1,40 @@
+
+/* ============================================
+   ANIMATIONS & INTERACTIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-content,
+  .hero-image-desktop,
+  .hero-image-mobile,
+  .section-header,
+  .problem-card,
+  .solution-card,
+  .benefit-item,
+  .differential-card {
+    animation: fadeInUp 0.8s ease-out;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

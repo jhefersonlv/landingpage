@@ -1,0 +1,128 @@
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background: rgba(12, 21, 59, 0.95);
+  backdrop-filter: blur(12px);
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: radial-gradient(circle at 2px 2px, #E6E7E8 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.footer-container {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-logo-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+
+  img {
+    width: 40%;
+  }
+}
+
+.footer-tagline {
+  color: rgba(230, 231, 232, 0.7);
+  font-size: 1.125rem;
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+  margin-bottom: 2rem;
+}
+
+.footer-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-info-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: rgba(230, 231, 232, 0.6);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .footer-info-items {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.footer-info-separator {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .footer-info-separator {
+    display: inline;
+  }
+}
+
+.footer-copyright {
+  color: rgba(230, 231, 232, 0.5);
+  font-size: 0.875rem;
+}
+
+.footer-cta {
+  padding-top: 1.5rem;
+}
+
+.footer-cta-title {
+  color: var(--color-light);
+  font-weight: 600;
+}
+
+.footer-cta-subtitle {
+  color: rgba(230, 231, 232, 0.7);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.footer-orb-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(34, 59, 113, 0.1);
+  border-radius: 9999px;
+  filter: blur(96px);
+}
+
+.footer-orb-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(168, 59, 135, 0.1);
+  border-radius: 9999px;
+  filter: blur(96px);
+}

@@ -1,0 +1,221 @@
+/* ============================================
+   DIFFERENTIALS SECTION
+   ============================================ */
+
+.differentials-section {
+  padding: 5rem 0;
+  background: rgba(12, 21, 59, 0.95);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .differentials-section {
+    padding: 8rem 0;
+  }
+}
+
+.differentials-bg-1 {
+  position: absolute;
+  top: 5rem;
+  left: 2.5rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(12, 121, 191, 0.1);
+  border-radius: 9999px;
+  filter: blur(96px);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.differentials-bg-2 {
+  position: absolute;
+  bottom: 5rem;
+  right: 2.5rem;
+  width: 24rem;
+  height: 24rem;
+  background: rgba(168, 59, 135, 0.1);
+  border-radius: 9999px;
+  filter: blur(96px);
+  animation: pulse 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.differentials-bg-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 37.5rem;
+  height: 37.5rem;
+  background: rgba(34, 59, 113, 0.05);
+  border-radius: 9999px;
+  filter: blur(96px);
+}
+
+.differentials-grid-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: radial-gradient(circle at 2px 2px, #E6E7E8 1px, transparent 0);
+  background-size: 60px 60px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.section-title-light {
+  color: var(--color-light);
+}
+
+.section-description-light {
+  color: rgba(230, 231, 232, 0.8);
+}
+
+.differentials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .differentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .differentials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.differential-card {
+  position: relative;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-base);
+}
+
+.differential-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-0.5rem);
+}
+
+.differential-glass {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), transparent);
+  border-radius: var(--radius-xl);
+}
+
+.differential-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-xl);
+  opacity: 0;
+  filter: blur(24px);
+  transition: opacity var(--transition-base);
+}
+
+.differential-card:hover .differential-glow {
+  opacity: 0.2;
+}
+
+
+
+.differential-content {
+  position: relative;
+}
+
+.differential-icon-wrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-xl);
+  margin-bottom: 1.5rem;
+  transition: transform var(--transition-base);
+  background: var(--gradient-primary);
+}
+
+.differential-card:hover .differential-icon-wrapper {
+  transform: scale(1.1);
+}
+
+
+
+.differential-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-light);
+  margin-bottom: 0.75rem;
+}
+
+.differential-description {
+  color: rgba(230, 231, 232, 0.7);
+  line-height: 1.625;
+}
+
+.differential-corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 9999px 0 0 0;
+  opacity: 0.1;
+}
+
+.differential-corner-1 {
+  background: linear-gradient(to top left, #223B71, #0C79BF);
+}
+
+.differential-corner-2 {
+  background: linear-gradient(to top left, #0C79BF, #A83B87);
+}
+
+.differential-corner-3 {
+  background: linear-gradient(to top left, #A83B87, #223B71);
+}
+
+.differentials-highlight {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.differentials-highlight-card {
+  display: inline-block;
+  background: linear-gradient(to right, rgba(34, 59, 113, 0.2), rgba(12, 121, 191, 0.2), rgba(25, 0, 255, 0.2));
+  backdrop-filter: blur(16px);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-xl);
+}
+
+.differentials-highlight-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-light);
+  margin-bottom: 0.5rem;
+}
+
+.differentials-highlight-subtitle {
+  color: rgba(230, 231, 232, 0.7);
+}

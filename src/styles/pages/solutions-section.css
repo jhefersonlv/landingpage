@@ -1,0 +1,212 @@
+
+/* ============================================
+   SOLUTION SECTION
+   ============================================ */
+
+.solution-section {
+  padding: 5rem 0;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .solution-section {
+    padding: 8rem 0;
+  }
+}
+
+.solution-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.02;
+  background-image: linear-gradient(#223B71 1px, transparent 1px), linear-gradient(90deg, #223B71 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 96rem;
+  margin: 0 auto 3rem;
+}
+
+@media (min-width: 768px) {
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .solutions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.solution-card {
+  position: relative;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(34, 59, 113, 0.1);
+  transition: all var(--transition-base);
+}
+
+.solution-card:hover {
+  box-shadow: var(--shadow-2xl);
+  transform: translateY(-0.5rem);
+}
+
+.solution-card-gradient {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-xl);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  background-color: var(--color-primary);
+}
+
+.solution-card:hover .solution-card-gradient {
+  opacity: 0.05;
+}
+
+
+.solution-icon-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-base);
+  background-color: var(--color-primary);
+}
+
+.solution-card:hover .solution-icon-wrapper {
+  transform: scale(1.1);
+}
+
+
+
+.solution-content {
+  position: relative;
+}
+
+.solution-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.solution-description {
+  color: var(--color-gray);
+  line-height: 1.625;
+}
+
+.solution-corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9999px 0 0 0;
+  opacity: 0.05;
+}
+
+.solution-corner-1 {
+  background: linear-gradient(to top left, #223B71, #0C79BF);
+}
+
+.solution-corner-2 {
+  background: linear-gradient(to top left, #0C79BF, #A83B87);
+}
+
+.solution-corner-3 {
+  background: linear-gradient(to top left, #A83B87, #223B71);
+}
+
+.solution-mobile-banner {
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .solution-mobile-banner {
+    display: none;
+  }
+}
+
+.solution-image-wrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid rgba(34, 59, 113, 0.1);
+}
+
+.solution-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.solution-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(34, 59, 113, 0.7), rgba(12, 121, 191, 0.1), transparent);
+}
+
+.solution-badges {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.solution-badge {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-md);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(34, 59, 113, 0.1);
+}
+
+.solution-bottom {
+  text-align: center;
+}
+
+.solution-bottom-card {
+  display: inline-block;
+  background: linear-gradient(to right, rgba(34, 59, 113, 0.1), rgba(12, 121, 191, 0.1), rgba(168, 59, 135, 0.1));
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  border: 1px solid rgba(34, 59, 113, 0.1);
+}
+
+.solution-bottom-title {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.solution-bottom-subtitle {
+  color: var(--color-gray);
+}

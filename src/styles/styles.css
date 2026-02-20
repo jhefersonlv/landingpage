@@ -1,0 +1,14 @@
+@import url(global.css);
+@import url(animations.css);
+@import url(bg.css);
+@import url(utility.css);
+
+@import url(pages/backgrounds.css);
+/* Pages */
+@import url(pages/benefits-section.css);
+@import url(pages/beta-sections.css);
+@import url(pages/diferentials-section.css);
+@import url(pages/footer-section.css);
+@import url(pages/hero-sections.css);
+@import url(pages/problems-section.css);
+@import url(pages/solutions-section.css);
