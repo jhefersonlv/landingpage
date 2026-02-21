@@ -12,7 +12,7 @@
   .solution-card,
   .benefit-item,
   .differential-card {
-    animation: fadeInUp 0.8s ease-out;
+    animation: fadeInUp 0.3s ease-out;
   }
 }
 

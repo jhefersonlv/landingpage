@@ -6,6 +6,7 @@
 iframe {
     display: flex;
     margin: auto;
+    z-index: 0;
 }
 
 .logo {
