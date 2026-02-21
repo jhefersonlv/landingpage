@@ -154,6 +154,11 @@
   width: 100%;
 }
 
+.cta-button-2 {
+  background: var(--color-accent);
+}
+
+
 @media (min-width: 640px) {
   .cta-button {
     width: auto;
