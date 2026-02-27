@@ -1,944 +1,352 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WordVirtua</title>
-  
-  <link rel="icon" type="image/png" href="src/images/favicon.png" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon.png">
-  
-  <link rel="stylesheet" href="src/styles/styles.css" />
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordVirtua — Controle Total do Seu Negócio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/styles/styles.css">
 </head>
 <body>
-  <!-- Background Global -->
-  <div class="global-background">
-    <img 
-      src="src/images/bg.png" 
-      alt="Background" 
-      class="background-image"
-    />
-    <div class="background-overlay"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo"></a>
+  <a href="#cta" class="nav-cta">Garantir Acesso Beta →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Sistema em desenvolvimento · Grupo Beta Exclusivo</div>
+
+  <h1>Assuma o controle<br><em>total da sua empresa</em></h1>
+
+  <p class="hero-sub">
+    Gerencie financeiro, clientes, pedidos e estoque em uma única plataforma simples e poderosa — feita para pequenos e médios empresários.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#cta" class="btn-primary">Quero entrar no grupo beta →</a>
+    <a href="#features" class="btn-secondary">Conhecer a plataforma</a>
   </div>
 
-  
+  <p class="hero-note">Sem compromisso &nbsp;·&nbsp; Vagas limitadas &nbsp;·&nbsp; 100% Web</p>
 
-  <div class="content-wrapper">
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-background-gradient"></div>
-      <div class="hero-grid-pattern"></div>
+  <!-- Dashboard Mock -->
+  <div class="hero-img-wrap">
+    <div class="dashboard-mock">
+      <div class="mock-topbar">
+        <div class="mock-dot"></div>
+        <div class="mock-dot"></div>
+        <div class="mock-dot"></div>
+        <span style="font-size:.75rem;color:var(--muted);margin-left:12px;">WordVirtua · Dashboard Principal</span>
+      </div>
+      <div class="mock-body">
+        <div class="mock-stat">
+          <div class="mock-stat-label">Receita do Mês</div>
+          <div class="mock-stat-value">R$ 48.320</div>
+          <div class="mock-stat-delta">▲ +12% vs. mês anterior</div>
+        </div>
+        <div class="mock-stat">
+          <div class="mock-stat-label">Lucro Real</div>
+          <div class="mock-stat-value">R$ 15.890</div>
+          <div class="mock-stat-delta">▲ +8% vs. mês anterior</div>
+        </div>
+        <div class="mock-stat">
+          <div class="mock-stat-label">Pedidos Abertos</div>
+          <div class="mock-stat-value">23</div>
+          <div class="mock-stat-delta" style="color:#FF7A5A;">▼ 4 pendentes hoje</div>
+        </div>
+        <div class="mock-chart">
+          <div class="mock-chart-label">Faturamento — Últimos 7 dias</div>
+          <div class="bars">
+            <div class="bar" style="height:35%"></div>
+            <div class="bar" style="height:50%"></div>
+            <div class="bar" style="height:42%"></div>
+            <div class="bar" style="height:70%"></div>
+            <div class="bar" style="height:58%"></div>
+            <div class="bar active" style="height:88%"></div>
+            <div class="bar" style="height:62%"></div>
+          </div>
+        </div>
+        <div class="mock-table">
+          <div class="mock-table-header">
+            <span>Últimos Pedidos</span>
+            <span>Status</span>
+          </div>
+          <div class="mock-row">
+            <span>Pedido #1028 · Cliente A</span>
+            <span class="mock-pill">Concluído</span>
+          </div>
+          <div class="mock-row">
+            <span>Pedido #1027 · Cliente B</span>
+            <span class="mock-pill warn">Pendente</span>
+          </div>
+          <div class="mock-row">
+            <span>Pedido #1026 · Cliente C</span>
+            <span class="mock-pill">Concluído</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="container">
-        <div class="hero-grid">
-          <!-- Left Content -->
-          <div class="hero-content">
-            <!-- Badge -->
-
+<!-- PAIN -->
+<section class="pain" id="pain">
+  <div class="container">
+    <div class="pain-grid">
+      <div>
+        <span class="section-tag">O Problema</span>
+        <h2 class="section-title">Você sente que sua empresa está no escuro?</h2>
+        <p class="section-sub">Sabemos como é frustrante não ter controle real do seu negócio. Se você se identifica com pelo menos um desses cenários, está na hora de mudar.</p>
+        <br>
+        <div class="pain-list">
+          <div class="pain-item">
+            <div class="pain-icon">😰</div>
             <div>
-            <img src="src/images/logo-escrito-azul.png" alt="">
-            </div>
-            
-          <!--
-            <div class="hero-badge">
-              <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-                <path d="M5 3v4"/>
-                <path d="M19 17v4"/>
-                <path d="M3 5h4"/>
-                <path d="M17 19h4"/>
-              </svg>
-              <span>Sistema em Desenvolvimento</span>
-            </div>
-          -->
-
-
-            <!-- Headline -->
-            <h1 class="hero-headline">
-              <span class="text-primary">Assuma o controle</span>
-              <br />
-              <span class="text-primary">da sua empresa de</span>
-              <br />
-              <span>uma vez por todas</span>
-            </h1>
-
-            <!-- Subheadline -->
-            <p class="hero-subheadline">
-              Gerencie <strong class="text-primary">financeiro</strong>, <strong class="text-primary">clientes</strong>, <strong class="text-primary">pedidos</strong> e <strong class="text-primary">estoque</strong> em uma única plataforma simples e poderosa.
-            </p>
-
-            <!-- CTA Button -->
-            <a href="#beta-section" class="hero-cta">
-              <button class="cta-button form">
-                <span class="cta-button-content">
-                  Quero organizar minha empresa
-                  <svg class="cta-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"/>
-                    <path d="m12 5 7 7-7 7"/>
-                  </svg>
-                </span>
-              </button>
-            </a>
-
-            <a href="form.html" class="hero-cta">
-              <button class="cta-button cta-button-2">
-                <span class="cta-button-content">
-                  Responder a pesquisa
-                  <svg class="cta-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"/>
-                    <path d="m12 5 7 7-7 7"/>
-                  </svg>
-                </span>
-              </button>
-            </a>
-
-            <!-- Microcopy -->
-            <p class="hero-microcopy">
-              Sem compromisso. Vagas limitadas para o grupo inicial.
-            </p>
-          </div>
-
-          <!-- Right Image - Desktop -->
-          <div class="hero-image-desktop">
-            <div class="hero-image-wrapper">
-              <img
-                src="src/images/img00.png"
-                alt="Dashboard moderno de gestão empresarial"
-                class="hero-image"
-                onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg=='"
-              />
-              <div class="hero-image-overlay"></div>
-            </div>
-
-            <!-- Floating Card -->
-            <div class="floating-card">
-              <div class="floating-card-content">
-                <div class="floating-card-icon">
-                  <span>✓</span>
-                </div>
-                <div>
-                  <p class="floating-card-title">Controle Total</p>
-                  <p class="floating-card-subtitle">Tudo em um só lugar</p>
-                </div>
-              </div>
+              <div class="pain-item-title">Não sabe o lucro real</div>
+              <div class="pain-item-desc">Dinheiro entra, dinheiro sai — mas você não sabe exatamente onde está o lucro.</div>
             </div>
           </div>
-
-          <!-- Mobile Image -->
-          <div class="hero-image-mobile">
-            <div class="hero-image-wrapper">
-              <img
-                src="src/images/img00.png"
-                alt="Empresário gerenciando negócio pelo computador"
-                class="hero-image-mobile-img"
-                onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg=='"
-              />
-              <div class="hero-image-overlay-mobile"></div>
-
-              <!-- Floating Badge Mobile -->
-              <div class="mobile-badge-container">
-                <div class="mobile-badge">
-                  <div class="mobile-badge-icon">
-                    <span>✓</span>
-                  </div>
-                  <div>
-                    <p class="mobile-badge-title">Controle Total</p>
-                    <p class="mobile-badge-subtitle">Tudo em um só lugar</p>
-                  </div>
-                </div>
-                <div class="mobile-saas-badge">
-                  <p class="mobile-saas-title">SaaS</p>
-                  <p class="mobile-saas-subtitle">100% Web</p>
-                </div>
-              </div>
+          <div class="pain-item">
+            <div class="pain-icon">📊</div>
+            <div>
+              <div class="pain-item-title">Planilhas confusas e desorganizadas</div>
+              <div class="pain-item-desc">Dezenas de abas, fórmulas quebradas e dados desatualizados todo santo dia.</div>
+            </div>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">🎲</div>
+            <div>
+              <div class="pain-item-title">Decisões tomadas no achismo</div>
+              <div class="pain-item-desc">Sem dados concretos, você aposta no instinto — e isso custa caro.</div>
+            </div>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">🔀</div>
+            <div>
+              <div class="pain-item-title">Dinheiro pessoal misturado com empresarial</div>
+              <div class="pain-item-desc">Separar o que é seu do que é da empresa virou um pesadelo mensal.</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Problems Section -->
-    <section class="problems-section">
-      <div class="problems-decorative-1"></div>
-      <div class="problems-decorative-2"></div>
-
-      <div class="container">
-        <!-- Header -->
-        <div class="section-header">
-          <h2 class="section-title">
-            Você sente que sua empresa
-            <br />
-            <span class="text-accent-1">está no escuro?</span>
-          </h2>
-          <p class="section-description">
-            Sabemos como é frustrante não ter controle total do seu negócio.
-          </p>
-        </div>
-
-        <!-- Mobile Visual -->
-        <div class="problems-mobile-visual">
-          <div class="problems-image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1589318577086-eaf0fadffcd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJlc3NlZCUyMGJ1c2luZXNzbWFuJTIwbWVzc3klMjBwYXBlcndvcmslMjBmaW5hbmNpYWwlMjBwcm9ibGVtc3xlbnwxfHx8fDE3NzE2MDYxOTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Empresário estressado com papelada e desorganização"
-              class="problems-image"
-              onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg=='"
-            />
-            <div class="problems-image-overlay"></div>
-            <div class="problems-image-badge">
-              <p class="problems-badge-text">
-                <span class="problems-badge-icon"></span>
-                Essa realidade precisa mudar agora
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Problems Grid -->
-        <div class="problems-grid">
-          <div class="problem-card">
-            <div class="problem-x-icon"></div>
-            <div class="problem-card-content">
-              <div class="problem-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 3v18h18"/>
-                  <path d="m19 9-5 5-4-4-3 3"/>
-                </svg>
-              </div>
-              <p>Não saber o lucro real</p>
-            </div>
-          </div>
-
-          <div class="problem-card">
-            <div class="problem-x-icon"></div>
-            <div class="problem-card-content">
-              <div class="problem-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
-                  <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
-                  <path d="M10 9H8"/>
-                  <path d="M16 13H8"/>
-                  <path d="M16 17H8"/>
-                </svg>
-              </div>
-              <p>Planilhas confusas e desorganizadas</p>
-            </div>
-          </div>
-
-          <div class="problem-card">
-            <div class="problem-x-icon"></div>
-            <div class="problem-card-content">
-              <div class="problem-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 16v-4"/>
-                  <path d="M12 8h.01"/>
-                </svg>
-              </div>
-              <p>Falta de visão clara do negócio</p>
-            </div>
-          </div>
-
-          <div class="problem-card">
-            <div class="problem-x-icon"></div>
-            <div class="problem-card-content">
-              <div class="problem-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                  <line x1="12" y1="22.08" x2="12" y2="12"/>
-                </svg>
-              </div>
-              <p>Decisões tomadas no achismo</p>
-            </div>
-          </div>
-
-          <div class="problem-card">
-            <div class="problem-x-icon"></div>
-            <div class="problem-card-content">
-              <div class="problem-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="12" x2="12" y1="2" y2="22"/>
-                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                </svg>
-              </div>
-              <p>Dinheiro pessoal misturado com empresarial</p>
-            </div>
-          </div>
-
-          <div class="problem-card">
-            <div class="problem-x-icon"></div>
-            <div class="problem-card-content">
-              <div class="problem-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
-                  <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
-                  <path d="M10 9H8"/>
-                  <path d="M16 13H8"/>
-                  <path d="M16 17H8"/>
-                </svg>
-              </div>
-              <p>Falta de organização e controle</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Text -->
-        <div class="problems-bottom">
-          <p class="problems-bottom-title">
-            Se você se identificou com pelo menos um desses problemas...
-          </p>
-          <p class="problems-bottom-subtitle">
-            É hora de mudar essa realidade.
-          </p>
-        </div>
+      <div class="pain-visual">
+        <img class="pain-img" src="https://images.unsplash.com/photo-1589318577086-eaf0fadffcd1?w=600&q=80" alt="Empresário estressado com papelada">
+        <div class="pain-tag-float">Chega de achismo!</div>
       </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="solution-section">
-      <div class="solution-pattern"></div>
-
-      <div class="container">
-        <!-- Header -->
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="text-primary">Agora imagine ter</span>
-            <br />
-            <span class="text-accent-2">tudo sob controle</span>
-          </h2>
-          <p class="section-description">
-            Uma plataforma completa pensada para pequenos e médios empresários como você.
-          </p>
-        </div>
-
-        <!-- Solutions Grid -->
-        <div class="solutions-grid">
-          <div class="solution-card">
-            <div class="solution-card-gradient"></div>
-            <div class="solution-icon-wrapper solution-icon-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" x2="12" y1="20" y2="10"/>
-                <line x1="18" x2="18" y1="20" y2="4"/>
-                <line x1="6" x2="6" y1="20" y2="16"/>
-              </svg>
-            </div>
-            <div class="solution-content">
-              <h3 class="solution-title">Dashboard Financeiro</h3>
-              <p class="solution-description">Veja seus números de forma simples e clara. Saiba exatamente quanto está entrando, saindo e seu lucro real.</p>
-            </div>
-            <div class="solution-corner solution-corner-1"></div>
-          </div>
-
-          <div class="solution-card">
-            <div class="solution-card-gradient solution-gradient-2"></div>
-            <div class="solution-icon-wrapper solution-icon-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <div class="solution-content">
-              <h3 class="solution-title">Gestão de Clientes</h3>
-              <p class="solution-description">Tenha todos os dados dos seus clientes organizados em um só lugar. Histórico completo e fácil acesso.</p>
-            </div>
-            <div class="solution-corner solution-corner-2"></div>
-          </div>
-
-          <div class="solution-card">
-            <div class="solution-card-gradient solution-gradient-3"></div>
-            <div class="solution-icon-wrapper solution-icon-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="8" cy="21" r="1"/>
-                <circle cx="19" cy="21" r="1"/>
-                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
-              </svg>
-            </div>
-            <div class="solution-content">
-              <h3 class="solution-title">Controle de Pedidos</h3>
-              <p class="solution-description">Gerencie orçamentos e pedidos de forma profissional. Acompanhe cada etapa do processo.</p>
-            </div>
-            <div class="solution-corner solution-corner-3"></div>
-          </div>
-
-          <div class="solution-card">
-            <div class="solution-card-gradient solution-gradient-1"></div>
-            <div class="solution-icon-wrapper solution-icon-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
-                <path d="M3 6h18"/>
-                <path d="M16 10a4 4 0 0 1-8 0"/>
-              </svg>
-            </div>
-            <div class="solution-content">
-              <h3 class="solution-title">Gestão de Estoque</h3>
-              <p class="solution-description">Controle inteligente de produtos. Nunca mais perca vendas por falta de estoque ou dinheiro parado.</p>
-            </div>
-            <div class="solution-corner solution-corner-1"></div>
-          </div>
-
-          <div class="solution-card">
-            <div class="solution-card-gradient solution-gradient-2"></div>
-            <div class="solution-icon-wrapper solution-icon-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
-                <polyline points="16 7 22 7 22 13"/>
-              </svg>
-            </div>
-            <div class="solution-content">
-              <h3 class="solution-title">Métricas Reais</h3>
-              <p class="solution-description">Indicadores de desempenho que realmente importam. Tome decisões baseadas em dados, não em achismos.</p>
-            </div>
-            <div class="solution-corner solution-corner-2"></div>
-          </div>
-
-          <div class="solution-card">
-          <div class="solution-card-gradient solution-gradient-3"></div>
-          <div class="solution-icon-wrapper solution-icon-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 20h9"/>
-              <path d="M16.5 3.5a2.12 2.12 0 1 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/>
-            </svg>
-          </div>
-          <div class="solution-content">
-            <h3 class="solution-title">Sistema Sob Medida</h3>
-            <p class="solution-description">
-              Seu negócio é único. Por isso, você pode personalizar o sistema de acordo com suas necessidades. 
-              Desenvolvemos funcionalidades sob demanda para que a plataforma evolua junto com sua empresa.
-            </p>
-          </div>
-          <div class="solution-corner solution-corner-3"></div>
-        </div>
-
-        </div>
-
-        <!-- Mobile Image Banner -->
-        <div class="solution-mobile-banner">
-          <div class="solution-image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1764690690771-b4522d66b433?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nJTIwc29sdXRpb24lMjBkaWdpdGFsJTIwdGFibGV0fGVufDF8fHx8MTc3MTYwNjE5MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Equipe usando solução digital de gestão"
-              class="solution-image"
-              onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg=='"
-            />
-            <div class="solution-image-overlay"></div>
-            <div class="solution-badges">
-              <span class="solution-badge">✓ Financeiro</span>
-              <span class="solution-badge">✓ Clientes</span>
-              <span class="solution-badge">✓ Estoque</span>
-              <span class="solution-badge">✓ Pedidos</span>
-              <span class="solution-badge">✓ E muito mais...</span>
-    
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom CTA -->
-        <div class="solution-bottom">
-          <div class="solution-bottom-card">
-            <p class="solution-bottom-title">
-              Tudo isso em uma interface simples e intuitiva
-            </p>
-            <p class="solution-bottom-subtitle">
-              Sem complicação. Sem curva de aprendizado. Feito para você.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits-section">
-      <div class="benefits-decorative-1"></div>
-      <div class="benefits-decorative-2"></div>
-
-      <div class="container">
-        <!-- Header -->
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="text-primary">Mais do que um sistema.</span>
-            <br />
-            <span class="text-primary">Uma nova forma de gerir.</span>
-          </h2>
-          <p class="section-description">
-            Transforme a maneira como você administra seu negócio.
-          </p>
-        </div>
-
-        <div class="benefits-grid">
-          <!-- Left - Image -->
-          <div class="benefits-image-container">
-            <div class="benefits-image-wrapper">
-              <img
-                src="src/images/benefits-image.jpg"
-                alt="Empresário confiante e organizado"
-                class="benefits-image"
-                onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg=='"
-              />
-              <div class="benefits-image-overlay"></div>
-              <div class="benefits-floating-badge">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span>Controle Alcançado</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right - Benefits List -->
-          <div class="benefits-list">
-            <div class="benefit-item">
-              <div class="benefit-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-              </div>
-              <div class="benefit-content">
-                <h3 class="benefit-title">Mais segurança nas decisões</h3>
-                <p class="benefit-description">Tome decisões baseadas em dados reais, não em intuição.</p>
-              </div>
-              <div class="benefit-check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-              </div>
-            </div>
-
-            <div class="benefit-item">
-              <div class="benefit-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-              </div>
-              <div class="benefit-content">
-                <h3 class="benefit-title">Menos estresse</h3>
-                <p class="benefit-description">Durma tranquilo sabendo que tudo está sob controle.</p>
-              </div>
-              <div class="benefit-check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-              </div>
-            </div>
-
-            <div class="benefit-item">
-              <div class="benefit-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                  <rect width="18" height="18" x="3" y="4" rx="2"/>
-                  <path d="M3 10h18"/>
-                </svg>
-              </div>
-              <div class="benefit-content">
-                <h3 class="benefit-title">Organização profissional</h3>
-                <p class="benefit-description">Eleve o nível da sua gestão para o próximo patamar.</p>
-              </div>
-              <div class="benefit-check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-              </div>
-            </div>
-
-            <div class="benefit-item">
-              <div class="benefit-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-                  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-                  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-                </svg>
-              </div>
-              <div class="benefit-content">
-                <h3 class="benefit-title">Crescimento estruturado</h3>
-                <p class="benefit-description">Cresça com solidez, não no improviso.</p>
-              </div>
-              <div class="benefit-check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-              </div>
-            </div>
-
-            <div class="benefit-item">
-              <div class="benefit-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
-                </svg>
-              </div>
-              <div class="benefit-content">
-                <h3 class="benefit-title">Clareza sobre números</h3>
-                <p class="benefit-description">Entenda exatamente para onde seu dinheiro está indo.</p>
-              </div>
-              <div class="benefit-check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Statement -->
-        <div class="benefits-bottom">
-          <div class="benefits-bottom-card">
-            <p class="benefits-bottom-text">
-              Você merece gerir sua empresa com <span class="text-accent-1">confiança</span> e <span class="text-accent-2">tranquilidade</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Differentials Section -->
-    <section class="differentials-section">
-      <div class="differentials-bg-1"></div>
-      <div class="differentials-bg-2"></div>
-      <div class="differentials-bg-3"></div>
-      <div class="differentials-grid-pattern"></div>
-
-      <div class="container">
-        <!-- Header -->
-        <div class="section-header">
-          <h2 class="section-title section-title-light">
-            <span class="text-light">Por que escolher o</span>
-            <br />
-            <span class="text-light">WordVirtua Soluções Web?</span>
-          </h2>
-          <p class="section-description section-description-light ">
-            Não é apenas mais um sistema. É a solução definitiva para sua gestão.
-          </p>
-        </div>
-
-        <!-- Differentials Grid -->
-        <div class="differentials-grid">
-          <div class="differential-card">
-            <div class="differential-glass"></div>
-            <div class="differential-glow differential-glow-1"></div>
-            <div class="differential-icon-wrapper differential-icon-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-              </svg>
-            </div>
-            <div class="differential-content">
-              <h3 class="differential-title">Sistema sob demanda.</h3>
-              <p class="differential-description">Entregamos um sistema de acordo com as necessidades reais do seu negócio.
-</p>
-            </div>
-            <div class="differential-corner differential-corner-1"></div>
-          </div>
-
-          <div class="differential-card">
-            <div class="differential-glass"></div>
-            <div class="differential-glow differential-glow-2"></div>
-            <div class="differential-icon-wrapper differential-icon-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
-                <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
-                <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>
-              </svg>
-            </div>
-            <div class="differential-content">
-              <h3 class="differential-title">Tudo centralizado</h3>
-              <p class="differential-description">Um único lugar para toda a gestão do seu negócio.</p>
-            </div>
-            <div class="differential-corner differential-corner-2"></div>
-          </div>
-
-          <div class="differential-card">
-            <div class="differential-glass"></div>
-            <div class="differential-glow differential-glow-3"></div>
-            <div class="differential-icon-wrapper differential-icon-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
-              </svg>
-            </div>
-            <div class="differential-content">
-              <h3 class="differential-title">Pensado para você</h3>
-              <p class="differential-description">Desenvolvido especialmente para pequenos e médios empresários.</p>
-            </div>
-            <div class="differential-corner differential-corner-3"></div>
-          </div>
-
-          <div class="differential-card">
-            <div class="differential-glass"></div>
-            <div class="differential-glow differential-glow-1"></div>
-            <div class="differential-icon-wrapper differential-icon-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
-                <polyline points="16 7 22 7 22 13"/>
-              </svg>
-            </div>
-            <div class="differential-content">
-              <h3 class="differential-title">Fácil de usar</h3>
-              <p class="differential-description">Sem curva de aprendizado complexa. Comece hoje mesmo.</p>
-            </div>
-            <div class="differential-corner differential-corner-1"></div>
-          </div>
-
-          <div class="differential-card">
-            <div class="differential-glass"></div>
-            <div class="differential-glow differential-glow-2"></div>
-            <div class="differential-icon-wrapper differential-icon-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <div class="differential-content">
-              <h3 class="differential-title">Evolui com você</h3>
-              <p class="differential-description">Sugestões dos clientes moldam o desenvolvimento.</p>
-            </div>
-            <div class="differential-corner differential-corner-2"></div>
-          </div>
-
-          <div class="differential-card">
-            <div class="differential-glass"></div>
-            <div class="differential-glow differential-glow-3"></div>
-            <div class="differential-icon-wrapper differential-icon-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-              </svg>
-            </div>
-            <div class="differential-content">
-              <h3 class="differential-title">Modular e escalável</h3>
-              <p class="differential-description">Cresce junto com sua empresa, sem limitações.</p>
-            </div>
-            <div class="differential-corner differential-corner-3"></div>
-          </div>
-        </div>
-
-        <!-- Highlight Statement -->
-        <div class="differentials-highlight">
-          <div class="differentials-highlight-card">
-            <p class="differentials-highlight-title">
-              🚀 O sistema evolui junto com sua empresa
-            </p>
-            <p class="differentials-highlight-subtitle">
-              Desenvolvimento modular que se adapta às suas necessidades
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Beta Section -->
-    <section id="beta-section" class="beta-section">
-      <div class="beta-bg-1"></div>
-      <div class="beta-bg-2"></div>
-      <div class="beta-bg-3"></div>
-
-      <div class="container">
-        <div class="beta-container">
-          <!-- Main Card -->
-          <div class="beta-card-wrapper">
-            <div class="beta-card-glow"></div>
-            <div class="beta-card">
-              <!-- Badge -->
-              <div class="beta-badge">
-                <svg class="beta-badge-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-                  <path d="M5 3v4"/>
-                  <path d="M19 17v4"/>
-                  <path d="M3 5h4"/>
-                  <path d="M17 19h4"/>
-                </svg>
-                <span>Vagas Limitadas</span>
-              </div>
-
-              <!-- Headline -->
-              <h2 class="beta-headline">
-                <span class="text-primary">Seja um dos primeiros a</span>
-                <br />
-                <span class="text-primary">transformar sua gestão</span>
-              </h2>
-
-              <!-- Description -->
-              <p class="beta-description">
-                Estamos selecionando empresas para testar a primeira versão da <strong class="text-primary">Linha Controle Total</strong>. Esta é uma oportunidade única de fazer parte desde o início.
-              </p>
-
-              <!-- Perks Grid -->
-              <div class="beta-perks-grid">
-                <div class="beta-perk">
-                  <div class="beta-perk-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                      <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                  </div>
-                  <span>Acesso prioritário à plataforma</span>
-                </div>
-
-                <div class="beta-perk">
-                  <div class="beta-perk-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                      <circle cx="9" cy="7" r="4"/>
-                      <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                    </svg>
-                  </div>
-                  <span>Participe ativamente do desenvolvimento</span>
-                </div>
-
-                <div class="beta-perk">
-                  <div class="beta-perk-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-                      <path d="M5 3v4"/>
-                      <path d="M19 17v4"/>
-                      <path d="M3 5h4"/>
-                      <path d="M17 19h4"/>
-                    </svg>
-                  </div>
-                  <span>Suas sugestões moldam o produto</span>
-                </div>
-
-                <div class="beta-perk">
-                  <div class="beta-perk-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10"/>
-                      <polyline points="12 6 12 12 16 14"/>
-                    </svg>
-                  </div>
-                  <span>Suporte direto com a equipe</span>
-                </div>
-              </div>
-
-              <!-- CTA Button -->
-              <div class="beta-cta">
-                
-                <button id="betaBtn" class="beta-button">
-                  <span class="beta-button-content">
-                    Quero participar do grupo inicial
-                    <svg class="beta-button-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"/>
-                      <path d="m12 5 7 7-7 7"/>
-                    </svg>
-                  </span>
-                </button>
-                
-
-                <!-- Microcopy -->
-                <div class="beta-microcopy">
-                  <div class="beta-microcopy-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10"/>
-                      <polyline points="12 6 12 12 16 14"/>
-                    </svg>
-                    <span>Processo rápido</span>
-                  </div>
-                  <span class="beta-microcopy-separator">•</span>
-                  <div class="beta-microcopy-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                      <circle cx="9" cy="7" r="4"/>
-                      <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                    </svg>
-                    <span>Poucas vagas disponíveis</span>
-                  </div>
-                  <span class="beta-microcopy-separator">•</span>
-                  <div class="beta-microcopy-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                      <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                    <span>Sem compromisso</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Trust Indicator -->
-              <div class="beta-trust">
-                <p class="beta-trust-text">
-                  <strong class="text-primary">Importante:</strong> Você terá prioridade sobre novos recursos e poderá influenciar diretamente no desenvolvimento do sistema.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bottom Text -->
-          <div class="beta-bottom">
-            <p class="beta-bottom-title">
-              O futuro da sua gestão começa agora.
-            </p>
-            <p class="beta-bottom-subtitle">
-              Não perca esta oportunidade de fazer parte desde o início.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-pattern"></div>
-
-      <div class="container">
-        <div class="footer-container">
-          <!-- Logo & Tagline -->
-          <div class="footer-logo">
-            <div class="footer-logo-content">
-              <img src="src/images/logo-escrito.png" alt="">
-            </div>
-            <p class="footer-tagline">
-              Tenha controle total do seu negócio em um só lugar.
-            </p>
-          </div>
-
-          <!-- Divider -->
-          <div class="footer-divider"></div>
-
-          <!-- Bottom Info -->
-          <div class="footer-info">
-            <div class="footer-info-items">
-              <span>Sistema em Desenvolvimento</span>
-              <span class="footer-info-separator">•</span>
-              <span>Linha Controle Total</span>
-              <span class="footer-info-separator">•</span>
-              <span>Grupo Beta</span>
-            </div>
-
-            <p class="footer-copyright">
-              © <span id="current-year"></span> WordVirtua Soluções Web. Todos os direitos reservados.
-            </p>
-
-            <!-- Final CTA -->
-            <div class="footer-cta">
-              <p class="footer-cta-title">
-                Pronto para assumir o controle?
-              </p>
-              <p class="footer-cta-subtitle">
-                Junte-se ao grupo de empresários que estão transformando sua gestão.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Gradient Orbs -->
-      <div class="footer-orb-1"></div>
-      <div class="footer-orb-2"></div>
-    </footer>
+    </div>
   </div>
+</section>
 
-  <script src="src/js/script.js"></script>
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="features-head">
+      <span class="section-tag">A Plataforma</span>
+      <h2 class="section-title">Tudo que você precisa,<br>em um só lugar</h2>
+      <p class="section-sub">Uma plataforma completa pensada especialmente para pequenos e médios empresários como você.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feat-card featured">
+        <div class="feat-icon">💰</div>
+        <div class="feat-title">Dashboard Financeiro Completo</div>
+        <div class="feat-desc">Veja seus números de forma simples e clara. Saiba exatamente quanto está entrando, saindo e qual é seu lucro real — atualizado em tempo real. Nunca mais tome decisões no escuro.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">👥</div>
+        <div class="feat-title">Gestão de Clientes</div>
+        <div class="feat-desc">Todos os dados dos seus clientes organizados com histórico completo e fácil acesso.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📦</div>
+        <div class="feat-title">Controle de Estoque</div>
+        <div class="feat-desc">Nunca mais perca vendas por falta de estoque ou tenha dinheiro parado em excesso.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📋</div>
+        <div class="feat-title">Pedidos e Orçamentos</div>
+        <div class="feat-desc">Gerencie orçamentos e pedidos de forma profissional, acompanhando cada etapa.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📈</div>
+        <div class="feat-title">Métricas Reais</div>
+        <div class="feat-desc">Indicadores que realmente importam. Tome decisões baseadas em dados, não em intuição.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🛠️</div>
+        <div class="feat-title">Sistema Sob Medida</div>
+        <div class="feat-desc">Seu negócio é único. Desenvolvemos funcionalidades sob demanda que evoluem com você.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="benefits-wrap">
+      <div>
+        <span class="section-tag">Transformação Real</span>
+        <h2 class="section-title">Mais do que um sistema.<br>Uma nova forma de gerir.</h2>
+        <p class="section-sub">Transforme a maneira como você administra seu negócio — com clareza, segurança e confiança.</p>
+        <br><br>
+        <div class="benefits-list">
+          <div class="benefit-row">
+            <div class="benefit-check">✓</div>
+            <div>
+              <div class="benefit-text">Mais segurança nas decisões</div>
+              <div class="benefit-sub">Tome decisões baseadas em dados reais, não em intuição.</div>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="benefit-check">✓</div>
+            <div>
+              <div class="benefit-text">Menos estresse e mais tranquilidade</div>
+              <div class="benefit-sub">Durma tranquilo sabendo que tudo está sob controle.</div>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="benefit-check">✓</div>
+            <div>
+              <div class="benefit-text">Organização profissional</div>
+              <div class="benefit-sub">Eleve o nível da sua gestão para o próximo patamar.</div>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="benefit-check">✓</div>
+            <div>
+              <div class="benefit-text">Crescimento estruturado</div>
+              <div class="benefit-sub">Cresça com solidez, não no improviso.</div>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="benefit-check">✓</div>
+            <div>
+              <div class="benefit-text">Clareza total sobre os números</div>
+              <div class="benefit-sub">Entenda exatamente para onde seu dinheiro está indo.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="benefits-visual">
+        <div class="metric-cards">
+          <div class="metric-card">
+            <div class="metric-num">1 plataforma</div>
+            <div class="metric-label">para toda a gestão do seu negócio</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">100%</div>
+            <div class="metric-label">Web — acesse de qualquer lugar</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">Zero</div>
+            <div class="metric-label">curva de aprendizado — simples desde o dia 1</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">∞</div>
+            <div class="metric-label">Funcionalidades sob demanda</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why-head">
+      <span class="section-tag">Por que WordVirtua</span>
+      <h2 class="section-title">Não é mais um sistema. É a solução definitiva.</h2>
+      <p class="section-sub">Construído do zero para funcionar como você precisa — sem complexidade desnecessária.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-number">01</div>
+        <div class="why-title">Sistema sob demanda</div>
+        <div class="why-desc">Entregamos um sistema de acordo com as necessidades reais do seu negócio. Nada de pagar por funcionalidades que você não usa.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-number">02</div>
+        <div class="why-title">Tudo centralizado</div>
+        <div class="why-desc">Um único lugar para toda a gestão. Chega de alternar entre dezenas de planilhas, apps e ferramentas diferentes.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-number">03</div>
+        <div class="why-title">Pensado para você</div>
+        <div class="why-desc">Desenvolvido especialmente para pequenos e médios empresários. Sem jargões técnicos ou interfaces complicadas.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-number">04</div>
+        <div class="why-title">Fácil de usar</div>
+        <div class="why-desc">Sem curva de aprendizado complexa. Comece hoje mesmo e tenha resultados visíveis desde os primeiros dias.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-number">05</div>
+        <div class="why-title">Evolui com você</div>
+        <div class="why-desc">Sugestões dos clientes moldam ativamente o desenvolvimento. Você ajuda a construir o produto ideal.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-number">06</div>
+        <div class="why-title">Modular e escalável</div>
+        <div class="why-desc">Cresce junto com sua empresa, sem limitações. Comece pequeno e expanda conforme precisar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-badge">⚡ Vagas Limitadas · Grupo Beta</div>
+      <h2 class="cta-title">Seja um dos primeiros a<br>transformar sua gestão</h2>
+      <p class="cta-sub">Estamos selecionando empresas para testar a primeira versão da <strong>Linha Controle Total</strong>. Esta é uma oportunidade única de fazer parte desde o início.</p>
+
+      <div class="cta-perks">
+        <div class="perk">Acesso prioritário à plataforma</div>
+        <div class="perk">Participe do desenvolvimento</div>
+        <div class="perk">Suas sugestões moldam o produto</div>
+        <div class="perk">Suporte direto com a equipe</div>
+      </div>
+
+      <a href="form.html" class="btn-primary" style="font-size:1.05rem; padding: 18px 40px;">
+        Quero participar do grupo inicial →
+      </a>
+
+      <p style="font-size:.82rem; color:var(--muted); margin-top:18px;">
+        Processo rápido &nbsp;·&nbsp; Poucas vagas disponíveis &nbsp;·&nbsp; Sem compromisso
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Word<span>Virtua</span> Soluções Web</div>
+  <div class="footer-note">© 2025 WordVirtua. Todos os direitos reservados. &nbsp;·&nbsp; Sistema em Desenvolvimento · Linha Controle Total</div>
+</footer>
+
+<script>
+  // Subtle scroll-reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.feat-card, .pain-item, .benefit-row, .why-card, .metric-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>
