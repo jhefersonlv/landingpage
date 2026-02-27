@@ -118,7 +118,10 @@
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
 
   .hero h1 {
-    font-family: 'Syne', sans-serif;
+    font-family: "syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
     font-weight: 800;
     font-size: clamp(2.6rem, 6vw, 5.2rem);
     line-height: 1.06;
@@ -243,7 +246,7 @@
   }
 
   .mock-stat-value {
-    font-family: 'Syne', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 1.5rem; font-weight: 700; margin-top: 6px;
   }
 
@@ -319,7 +322,7 @@
   }
 
   .section-title {
-    font-family: 'Syne', sans-serif;
+    font-family: "syne", sans-serif;
     font-weight: 800;
     font-size: clamp(2rem, 4vw, 3rem);
     letter-spacing: -0.03em;
@@ -359,7 +362,7 @@
     position: absolute; bottom: -20px; right: -20px;
     background: var(--warn);
     color: #fff;
-    font-family: 'Syne', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 700;
     font-size: .9rem;
     padding: 12px 20px;
@@ -440,7 +443,7 @@
   }
 
   .feat-title {
-    font-family: 'Syne', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 700; font-size: 1.1rem; margin-bottom: 8px;
   }
 
@@ -501,7 +504,7 @@
   .metric-card:first-child { grid-column: span 2; }
 
   .metric-num {
-    font-family: 'Syne', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 2.4rem; font-weight: 800;
     background: linear-gradient(90deg, #5C9BFF, var(--accent));
     -webkit-background-clip: text;
@@ -533,7 +536,7 @@
   .why-card:hover { border-color: rgba(0,87,255,0.3); transform: translateY(-3px); }
 
   .why-number {
-    font-family: 'Syne', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 2.8rem; font-weight: 800;
     color: rgba(0,87,255,0.25);
     line-height: 1;
@@ -577,7 +580,7 @@
   }
 
   .cta-title {
-    font-family: 'Syne', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 800;
     letter-spacing: -0.03em;
@@ -613,7 +616,7 @@
   }
 
   .footer-logo {
-    font-family: 'Syne', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 800; font-size: 1.1rem;
     color: var(--white);
   }
