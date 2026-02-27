@@ -616,9 +616,12 @@
   }
 
   .footer-logo {
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 800; font-size: 1.1rem;
-    color: var(--white);
+    width: 50px;
+    height: 80px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .footer-logo span { color: var(--blue); }
 
@@ -650,4 +653,9 @@
     .metric-card:first-child { grid-column: span 1; }
     nav { padding: 16px 5vw; }
     .nav-cta { padding: 9px 16px; font-size: .82rem; }
+    .footer-logo {
+    width: 250px;
+    height: 80px;
+    background-image: url(../images/logo-escrito.png);
+  }
   }
