@@ -1,7 +1,8 @@
 :root {
-    --blue: #0057FF;
-    --blue-dark: #003FC2;
-    --blue-glow: rgba(0,87,255,0.18);
+    --blue: #38bdf8;
+    --blue-dark: #0b132b;
+    --data-purple: #6366f1;
+    --blue-glow: #0b132b2e;
     --ink: #0A0D14;
     --ink-2: #1A1F2E;
     --white: #FFFFFF;
@@ -51,7 +52,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../images/logo-escrito.png);
+    background-image: url(../images/logo_white.svg);
   }
 
   .nav-logo span { color: var(--blue); }
@@ -70,7 +71,7 @@
     transition: background .2s, transform .15s;
     display: inline-block;
   }
-  .nav-cta:hover { background: var(--blue-dark); transform: translateY(-1px); }
+  .nav-cta:hover { background: var(--data-purple); transform: translateY(-1px); }
 
   /* ─── HERO ─── */
   .hero {
@@ -132,7 +133,7 @@
 
   .hero h1 em {
     font-style: normal;
-    background: linear-gradient(90deg, #5C9BFF, #00E5A0);
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -168,7 +169,7 @@
     transition: all .2s;
     box-shadow: 0 0 30px rgba(0,87,255,0.35);
   }
-  .btn-primary:hover { background: var(--blue-dark); transform: translateY(-2px); box-shadow: 0 8px 40px rgba(0,87,255,0.5); }
+  .btn-primary:hover { background: var(--data-purple); transform: translateY(-2px); box-shadow: 0 8px 40px rgba(0,87,255,0.5); }
 
   .btn-secondary {
     background: transparent;
@@ -506,7 +507,7 @@
   .metric-num {
     font-family: "Noto Sans", sans-serif;
     font-size: 2.4rem; font-weight: 800;
-    background: linear-gradient(90deg, #5C9BFF, var(--accent));
+    background: linear-gradient(90deg, #1079BF, var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -538,7 +539,7 @@
   .why-number {
     font-family: "Noto Sans", sans-serif;
     font-size: 2.8rem; font-weight: 800;
-    color: rgba(0,87,255,0.25);
+    color: #1079bfd0;
     line-height: 1;
     margin-bottom: 16px;
   }
@@ -643,7 +644,7 @@
   }
 
   @media (max-width: 600px) {
-    .nav-logo {width: 50px; height: 100px; background-image: url(../images/logo.png);}
+    .nav-logo {width: 50px; height: 100px; background-image: url(../images/logo_branco.svg);}
     .features-grid { grid-template-columns: 1fr; }
     .feat-card.featured { grid-column: span 1; }
     .why-grid { grid-template-columns: 1fr; }
